@@ -1,0 +1,13 @@
+#footer {
+    background-color: darkolivegreen;
+    margin: 0rem;
+    padding: 2rem;
+}
+
+div p {
+    color: rgb(251, 243, 210);
+}
+
+div button {
+    margin: 0.5rem;
+}

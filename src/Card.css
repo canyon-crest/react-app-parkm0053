@@ -1,0 +1,19 @@
+.h2 {
+    text-decoration: underline;
+    text-decoration: green;
+}
+
+.fruitCard {
+    border: 3px dotted;
+    border-width: 0.25rem;
+    border-color: rgb(240, 109, 86);
+    border-radius: 7px;
+    padding: 0rem;
+    margin: 2rem;
+    background-color: rgb(85, 107, 47);
+    color: honeydew;
+}
+
+.fruitCard:hover {
+    background-color: rgba(85, 107, 47, 0.5);
+}
