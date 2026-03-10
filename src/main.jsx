@@ -5,14 +5,17 @@ import App from './App.jsx'
 import Nav from './Nav.jsx'
 import Card from './Card.jsx'
 import Footer from './Footer.jsx'
+import About from './About.jsx'
+import Contact from './Contact.jsx'
+import Title from './Title.jsx'
   
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Nav /> 
+    <Nav />
+    <Title title="Buy Fruit"></Title>
     <Card name="Apples" desc="Jonny liked them"/>
     <Card name="Bananas" desc="Edible and portable telephones"/>
-    <Card name="Pears" desc="You've got to buy them in pairs!"/>
-    <App />
+    <Card name="Pears" desc="You've got to buy them in pairs"/>
     <Footer />
   </StrictMode>
 )

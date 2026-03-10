@@ -6,7 +6,7 @@
 .fruitCard {
     border: 3px dotted;
     border-width: 0.25rem;
-    border-color: rgb(240, 109, 86);
+    border-color: rgb(213, 255, 223);
     border-radius: 7px;
     padding: 0rem;
     margin: 2rem;
@@ -16,4 +16,8 @@
 
 .fruitCard:hover {
     background-color: rgba(85, 107, 47, 0.5);
+}
+
+.fruitCard button:hover{
+    background-color: rgb(202, 231, 202);
 }

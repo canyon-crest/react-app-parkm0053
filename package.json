@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://canyon-crest/react-app-parkm0053",
+  "homepage": "https://canyon-crest.github.io/react-app-parkm0053",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

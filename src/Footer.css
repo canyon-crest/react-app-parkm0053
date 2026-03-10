@@ -1,11 +1,11 @@
 #footer {
-    background-color: darkolivegreen;
+    background-color: cornflowerblue;
     margin: 0rem;
     padding: 2rem;
 }
 
-div p {
-    color: rgb(251, 243, 210);
+#footer {
+    color:#213547;;
 }
 
 div button {
