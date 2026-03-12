@@ -2,10 +2,8 @@
     background-color: cornflowerblue;
     margin: 0rem;
     padding: 2rem;
-}
-
-#footer {
-    color:#213547;;
+    color:#213547;
+    bottom: 0;
 }
 
 div button {

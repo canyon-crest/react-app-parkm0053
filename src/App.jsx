@@ -1,34 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Nav from './Nav.jsx'
+import About from './About.jsx'
+import Footer from './Footer.jsx'
+import Contact from './Contact.jsx'
+import Card from './Card.jsx'
+import Title from './Title.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState("home");
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Mur + React</h1>
-      <p>Hello World!</p>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 6)}>
-          You've clicked the button {count} times. That's a lie
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Nav setPage={setPage}/>
+      {page === "home" &&  
+        <div>
+          <Title title = "Buy Fruit"/> 
+          <Card name="Apples" desc="Jonny really liked them"/> 
+          <Card name="Bananas" desc="Edible and portable telephones" /> 
+          <Card name="Pears" desc="You've got to buy them in two"/> 
+        </div>
+      }
+      
+      {page === "about" && 
+        <div>
+          <Title title="About"/>
+          <About />
+        </div> 
+      }
+      {page === "contact" &&
+        <div>
+          <Title title="Contact Buy Fruit" />
+          <Contact />
+        </div>
+      }
+      <Footer />
     </>
   )
 }
