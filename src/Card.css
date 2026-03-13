@@ -10,14 +10,20 @@
     border-radius: 7px;
     padding: 0rem;
     margin: 2rem;
-    background-color: rgb(85, 107, 47);
+    background-color: rgb(157, 186, 106);
     color: honeydew;
 }
 
+.fruitCard button {
+    background-color: darkgreen;
+    margin: 1rem;
+}
+
 .fruitCard:hover {
-    background-color: rgba(85, 107, 47, 0.5);
+    background-color: rgba(151, 190, 83, 0.5);
 }
 
 .fruitCard button:hover{
     background-color: rgb(202, 231, 202);
+    color: darkgreen;
 }

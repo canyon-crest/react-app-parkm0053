@@ -5,17 +5,18 @@ ul {
     list-style-type: none;
     gap: 2rem;
     flex-wrap: wrap;
-    background-color: cornflowerblue;
+    background-color: darkgreen;
     margin: 0rem;
     padding: 2rem 20rem;
+    color: white;
 }
 
 ul li {
     text-decoration: none;
-    padding: 0.25rem;
+    padding: 1rem;
 }
 ul li:hover {
-    color: darkblue;
-    background-color: rgba(117, 248, 255, 0.5);
-    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(157, 186, 106, 0.75);
+    border-radius: 2px;
 }
