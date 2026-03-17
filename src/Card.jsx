@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 function Card({name, desc}) {
     const [count, setCount] = useState(0);
-    const [isCardVisible, setIsCardVisible] = useState(false); 
 
     return (
         <div className="fruitCard">

@@ -17,3 +17,15 @@ what used to be in dist/index.html
 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+
+
+
+      {page === "guestlog" &&
+        <div>
+          <Title title="Guest Log" />
+          <Guestlog />
+        </div>
+      }
+
+
+      

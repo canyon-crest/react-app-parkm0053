@@ -6,6 +6,9 @@ import Footer from './Footer.jsx'
 import Contact from './Contact.jsx'
 import Card from './Card.jsx'
 import Title from './Title.jsx'
+import Signin from './Signin.jsx'
+import Guestlog from './Guestlog.jsx'
+import displayCountry from './displayCountry.jsx'
 
 function App() {
   const [page, setPage] = useState("home");
@@ -26,12 +29,23 @@ function App() {
         <div>
           <Title title="About"/>
           <About />
+          <displayCountry />
         </div> 
       }
+
       {page === "contact" &&
         <div>
           <Title title="Contact Buy Fruit" />
           <Contact />
+        </div>
+      }
+
+      
+      {page === "guestlog" &&
+        <div>
+          <Title title="Guest Log" />
+          <Signin />
+          <Guestlog />
         </div>
       }
       <Footer />
