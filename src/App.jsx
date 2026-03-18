@@ -10,6 +10,7 @@ import Signin from './Signin.jsx'
 import Guestlog from './Guestlog.jsx'
 import RandomDog from './RandomDog.jsx'
 import RandomCat from './RandomCat.jsx'
+import Example from './Example.jsx'
 
 function App() {
   const [page, setPage] = useState("home");
@@ -20,6 +21,7 @@ function App() {
       {page === "home" &&  
         <div>
           <Title title = "Buy Fruit"/> 
+          <Example />
           <Card name="Apples" desc="Jonny really liked them"/> 
           <Card name="Bananas" desc="Edible and portable telephones" /> 
           <Card name="Pears" desc="You've got to buy them in two"/> 

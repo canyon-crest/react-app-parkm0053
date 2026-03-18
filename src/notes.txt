@@ -1,3 +1,10 @@
+need
+nav/footer
+3 comp
+firebase
+google authenication
+api
+firestore (adding/using database)
 
 
 what used to be in dist/index.html
