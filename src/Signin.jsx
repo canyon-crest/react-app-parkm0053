@@ -90,6 +90,7 @@ function App() {
         </div>
       ) : (
         // If no user is logged in, show login button
+        //test commit
         <div>
           <button onClick={handleLogin}>Login with Google</button>
         </div>
