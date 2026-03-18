@@ -8,7 +8,8 @@ import Card from './Card.jsx'
 import Title from './Title.jsx'
 import Signin from './Signin.jsx'
 import Guestlog from './Guestlog.jsx'
-import displayCountry from './displayCountry.jsx'
+import RandomDog from './RandomDog.jsx'
+import RandomCat from './RandomCat.jsx'
 
 function App() {
   const [page, setPage] = useState("home");
@@ -29,7 +30,8 @@ function App() {
         <div>
           <Title title="About"/>
           <About />
-          <displayCountry />
+          <RandomDog />
+          <RandomCat />
         </div> 
       }
 
