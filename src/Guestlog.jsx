@@ -7,6 +7,7 @@ import {
 } from "firebase/firestore";
 import { db, auth, provider } from './firebase'; // Custom Firebase config
 import { signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth'; // Auth methods
+import './Guestlog.css'
 
 function Guestlog() {
   //for list
@@ -14,9 +15,6 @@ function Guestlog() {
   const [items, setItems] = useState([]);
   //for sign in
   const [user, setUser] = useState(null);
-  const testVar = "testVar";
-
-
 
   // Ask google very nicely to do login
   const handleLogin = async () => {

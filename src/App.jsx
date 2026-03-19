@@ -1,24 +1,25 @@
 import { useState } from 'react'
+import React, { Suspense, lazy } from 'react';
 import './App.css'
-import Nav from './Nav.jsx'
-import About from './About.jsx'
-import Footer from './Footer.jsx'
-import Contact from './Contact.jsx'
-import Card from './Card.jsx'
-import Title from './Title.jsx'
-import Guestlog from './Guestlog.jsx'
-import RandomDog from './RandomDog.jsx'
-import RandomCat from './RandomCat.jsx'
+//import Nav from './Nav.jsx'
+const Nav = lazy(() => import('./Nav'));
+const About = lazy(() => import('./About'));
+const Footer = lazy(() => import('./Footer'));
+const Contact = lazy(() => import('./Contact'));
+const Card = lazy(() => import('./Card'));
+const Guestlog = lazy(() => import('./Guestlog'));
+
 
 function App() {
   const [page, setPage] = useState("home");
 
   return (
     <>
+      <Suspense>
       <Nav setPage={setPage}/>
       {page === "home" &&  
         <div>
-          <Title title = "Buy Fruit"/>
+          <h1 className="title">Buy Fruit</h1>
           <Card name="Apples" desc="Jonny really liked them"/> 
           <Card name="Bananas" desc="Edible and portable telephones" /> 
           <Card name="Pears" desc="You've got to buy them in two"/> 
@@ -27,14 +28,14 @@ function App() {
       
       {page === "about" && 
         <div>
-          <Title title="About"/>
+          <h1 className="title">About</h1>
           <About setPage={setPage} />
         </div> 
       }
 
       {page === "contact" &&
         <div>
-          <Title title="Contact Buy Fruit" />
+          <h1 className="title">Contact Buy Fruit</h1>
           <Contact />
         </div>
       }
@@ -42,11 +43,12 @@ function App() {
       
       {page === "guestlog" &&
         <div>
-          <Title title="Guest Log" />
+          <h1 className="title">Guest Log</h1>
           <Guestlog />
         </div>
       }
       <Footer />
+      </Suspense>
     </>
   )
 }
