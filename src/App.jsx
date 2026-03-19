@@ -36,8 +36,6 @@ function App() {
         <div>
           <Title title="Contact Buy Fruit" />
           <Contact />
-          <RandomDog />
-          <RandomCat />
         </div>
       }
 
