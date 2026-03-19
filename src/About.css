@@ -1,0 +1,12 @@
+#aboutDiv p{
+    display: inline;
+}
+
+#aboutDiv button {
+    margin: 2rem;
+}
+
+#fakeLink {
+    text-decoration: underline;
+    color: darkblue;
+}

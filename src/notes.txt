@@ -1,3 +1,10 @@
+#nameBox, #messageBox {
+    display: block flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
 need
 nav/footer
 3 comp

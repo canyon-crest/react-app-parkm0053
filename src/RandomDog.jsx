@@ -21,7 +21,7 @@ function RandomDog() {
 
   return (
     <div id="randomDogDiv">
-      <h1>Random Dog</h1>
+      <h2>Random Dog</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (

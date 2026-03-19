@@ -6,11 +6,9 @@ import Footer from './Footer.jsx'
 import Contact from './Contact.jsx'
 import Card from './Card.jsx'
 import Title from './Title.jsx'
-import Signin from './Signin.jsx'
 import Guestlog from './Guestlog.jsx'
 import RandomDog from './RandomDog.jsx'
 import RandomCat from './RandomCat.jsx'
-import Example from './Example.jsx'
 
 function App() {
   const [page, setPage] = useState("home");
@@ -20,8 +18,7 @@ function App() {
       <Nav setPage={setPage}/>
       {page === "home" &&  
         <div>
-          <Title title = "Buy Fruit"/> 
-          <Example />
+          <Title title = "Buy Fruit"/>
           <Card name="Apples" desc="Jonny really liked them"/> 
           <Card name="Bananas" desc="Edible and portable telephones" /> 
           <Card name="Pears" desc="You've got to buy them in two"/> 
@@ -31,9 +28,7 @@ function App() {
       {page === "about" && 
         <div>
           <Title title="About"/>
-          <About />
-          <RandomDog />
-          <RandomCat />
+          <About setPage={setPage} />
         </div> 
       }
 
@@ -41,6 +36,8 @@ function App() {
         <div>
           <Title title="Contact Buy Fruit" />
           <Contact />
+          <RandomDog />
+          <RandomCat />
         </div>
       }
 
@@ -48,7 +45,6 @@ function App() {
       {page === "guestlog" &&
         <div>
           <Title title="Guest Log" />
-          <Signin />
           <Guestlog />
         </div>
       }

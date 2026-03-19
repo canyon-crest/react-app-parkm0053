@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './RandomDog.css'
 
 export default function RandomCat() {
   const [catUrl, setCatUrl] = useState("");
@@ -17,22 +18,24 @@ export default function RandomCat() {
     }
   };
 
+
   return (
-    <div>
+    <div id="randomDogDiv">
       <h2>Random Cat</h2>
       
-      <button onClick={fetchCat} disabled={loading}>
-        {loading ? "Loading..." : "Click for cat"}
-      </button>
-
       <div>
         {catUrl && (
           <img
             src={catUrl}
             alt="Random cat"
+            id="dogPhoto"
           />
         )}
       </div>
+
+      <button onClick={fetchCat} disabled={loading}>
+        {loading ? "Loading..." : "Show me new cat"}
+      </button>
     </div>
   );
 }
